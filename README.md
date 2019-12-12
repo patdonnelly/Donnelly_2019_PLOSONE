@@ -1,4 +1,4 @@
-# Donnelly_2019_SSR
+# Donnelly_2019_PLOSONE
 This is a repository including data, analysis scripts, and figure generation scripts associated with the following manuscript, "Annotating digital text with phonemic cues to support decoding performance in struggling readers" submitted to PsyRxiv.
 
 Citation: Donnelly, P. M., Larson, K., Matskewich, T., & Yeatman, J. D. (2019, November 19). Annotating digital text with phonemic cues to support decoding in struggling readers. https://doi.org/10.31234/osf.io/7mw5b
