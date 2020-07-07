@@ -1,0 +1,111 @@
+---
+title: "Codebook"
+author: "Patrick M. Donnelly"
+date: "7 July 2020"
+output:
+  html_document:
+    keep_md: yes
+---
+
+## Project Description
+Data and code associated with "Annotating digital text with phonemic cues to support decoding in struggling readers", currently under review at PLOS ONE.  
+
+##Study design and data processing
+
+###Collection of the raw data
+Data was collected in-person by the first author in the Brain Development and Education Lab at the University of Washington in Seattle, WA. 
+
+
+###Variables
+| Variable                  | Description                                                                              |
+|---------------------------|------------------------------------------------------------------------------------------|
+| record_id                 | unique subject identifier                                                                |
+| redcap_event_name         | visit identifier in our database: RedCap                                                 |
+| study_name                | study classifiers for this project                                                       |
+| visit_researcher          | Lab member initials                                                                      |
+| visit_dt                  | Date/time of today's visit                                                               |
+| int_session               | Intervention session {1,2}                                                               |
+| pigs_run                  | Study identifier {yes/no, 0,1}                                                           |
+| pigs_group                | Study group: A: control, B: intervention, 1/2: counterbalanced   presentation of stimuli |
+| pigs_casecontrol          | Case (1) or Control (0)                                                                  |
+| pigs_p1_r1_time           | Passage 1, Read 1, Time (seconds)                                                        |
+| pigs_p1_r1_acc            | Passage 1, Read 1, Accuracy (# of words correct)                                         |
+| pigs_p1_r1_rate           | Passage 1, Read 1, Rate (Acc/Time)                                                       |
+| pigs_p1_r2_time           | Passage 1, Read 2, Time (seconds)                                                        |
+| pigs_p1_r2_acc            | Passage 1, Read 2, Accuracy (# of words correct)                                         |
+| pigs_p1_r2_rate           | Passage 1, Read 2, Rate (seconds)                                                        |
+| pigs_p1_retell            | Passage 1, Retell (# of words)                                                           |
+| pigs_p2_r1_time           | Passage 2, Read 1, Time (seconds)                                                        |
+| pigs_p2_r1_acc            | Passage 2, Read 1, Accuracy (# of words correct)                                         |
+| pigs_p2_r1_rate           | Passage 2, Read 1, Rate (Acc/Time)                                                       |
+| pigs_p2_r2_time           | Passage 2, Read 2, Time (seconds)                                                        |
+| pigs_p2_r2_acc            | Passage 2, Read 2, Accuracy (# of words correct)                                         |
+| pigs_p2_r2_rate           | Passage 2, Read 2, Rate (seconds)                                                        |
+| pigs_p2_retell            | Passage 2, Retell (# of words)                                                           |
+| pigs_p3_r1_time           | Passage 3, Read 1, Time (seconds)                                                        |
+| pigs_p3_r1_acc            | Passage 3, Read 1, Accuracy (# of words correct)                                         |
+| pigs_p3_r1_rate           | Passage 3, Read 1, Rate (Acc/Time)                                                       |
+| pigs_p3_r2_time           | Passage 3, Read 2, Time (seconds)                                                        |
+| pigs_p3_r2_acc            | Passage 3, Read 2, Accuracy (# of words correct)                                         |
+| pigs_p3_r2_rate           | Passage 3, Read 2, Rate (seconds)                                                        |
+| pigs_p3_retell            | Passage 3, Retell (# of words)                                                           |
+| pigs_p4_r1_time           | Passage 4, Read 1, Time (seconds)                                                        |
+| pigs_p4_r1_acc            | Passage 4, Read 1, Accuracy (# of words correct)                                         |
+| pigs_p4_r1_rate           | Passage 4, Read 1, Rate (Acc/Time)                                                       |
+| pigs_p4_r2_time           | Passage 4, Read 2, Time (seconds)                                                        |
+| pigs_p4_r2_acc            | Passage 4, Read 2, Accuracy (# of words correct)                                         |
+| pigs_p4_r2_rate           | Passage 4, Read 2, Rate (seconds)                                                        |
+| pigs_p4_retell            | Passage 4, Retell (# of words)                                                           |
+| pigs_word1_time           | Word List 1 - Time                                                                       |
+| pigs_word1_acc            | Word List 1 - Accuracy                                                                   |
+| pigs_word1_rate           | Word List 1 - Rate                                                                       |
+| pigs_word2_time           | Word List 2 - Time                                                                       |
+| pigs_word2_acc            | Word List 2 - Accuracy                                                                   |
+| pigs_word2_rate           | Word List 2 - Rate                                                                       |
+| pigs_pseudo1_time         | Pseudo List 1 - Time                                                                     |
+| pigs_pseudo1_acc          | Pseudo List 1 - Accuracy                                                                 |
+| pigs_pseudo1_rate         | Pseudo List 1 - Rate                                                                     |
+| pigs_pseudo2_time         | Pseudo List 2 - Time                                                                     |
+| pigs_pseudo2_acc          | Pseudo List 2 - Accuracy                                                                 |
+| pigs_pseudo2_rate         | Pseudo List 2 - Rate                                                                     |
+| pigs_practice_numstories  | Practice Metrics - Number of Passages Read                                               |
+| pigs_practice_browsertime | Practice Metrics - Browser time (mins)                                                   |
+| visit_age                 | Age in months at time of testing:Calculated                                              |
+| short_first_time          | Average of shorter passage first reads: time                                             |
+| short_first_acc           | Average of shorter passage first reads: accuracy                                         |
+| short_first_rate          | Average of shorter passage first reads: rate                                             |
+| long_first_time           | Average of longer passage first reads: time                                              |
+| long_first_acc            | Average of longer passage first reads: accuracy                                          |
+| long_first_rate           | Average of longer passage first reads: rate                                              |
+| short_second_time         | Average of shorter passage second reads: time                                            |
+| short_second_acc          | Average of shorter passage second reads: accuracy                                        |
+| short_second_rate         | Average of shorter passage second reads: rate                                            |
+| long_second_time          | Average of longer passage second reads: time                                             |
+| long_second_acc           | Average of longer passage second reads: accuracy                                         |
+| long_second_rate          | Average of longer passage second reads: rate                                             |
+| word_time                 | Average of two word list stimuli: time                                                   |
+| word_acc                  | Average of two word list stimuli: accuracy                                               |
+| word_rate                 | Average of two word list stimuli: rate                                                   |
+| pseudo_time               | Average of two pseudoword list stimuli: time                                             |
+| pseudo_acc                | Average of two pseudoword list stimuli: accuracy                                         |
+| pseudo_rate               | Average of two pseudoword list stimuli: rate                                             |
+| word_acc_diff             | Difference between second and first visit word accuracy                                  |
+| pseudo_acc_diff           | Difference between second and first visit pseudoword accuracy                            |
+| short_acc                 | Average of shorter passages: accuracy                                                    |
+| short_rate                | Average of shorter passages: rate                                                        |
+| long_acc                  | Average of longer passages: accuracy                                                     |
+| long_rate                 | Average of longer passages: rate                                                         |
+| first_acc                 | Average for first reads: accuracy                                                        |
+| second_rate               | Average for second reads: rate                                                           |
+| short_acc_diff            | Difference between second and first visit short passage   accuracy                       |
+| short_rate_diff           | Difference between second and first visit short passage rate                             |
+| long_acc_diff             | Difference between second and first visit longer passage   accuracy                      |
+| long_rate_diff            | Difference between second and first visit longer passage rate                            |
+| first_acc_diff            | Difference between second and first visit: first read accuracy                           |
+| second_rate_diff          | Difference between second and first visit: second read rate                              |
+| wj_brs                    | WJ Basic Reading Skills composite                                                        |
+| twre_index                | TOWRE-2 TWRE Index composite                                                             |
+| ctopp_rapid               | CTOPP Rapid Symbolic Naming composite                                                    |
+| wasi_fs2                  | WASI_II Full-Scale 2 composite                                                           |
+| ctopp_pa                  | CTOPP Phonological Awareness composite                                                   |
+| ctopp_pm                  | CTOPP Phonological Memory composite                                                      |
