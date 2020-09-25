@@ -1,7 +1,7 @@
 %% LME Analysis Script for Donnelly 2019 PLOS ONE
 % Patrick M. Donnelly
 % University of Washington
-% September 23, 2020
+% September 25, 2020
 
 %% Data processing
 % read in data 
@@ -233,10 +233,6 @@ ylabel('Fitted')
 lme_rate = fitlme(data, model_3, 'FitMethod', 'REML');
 
 
-
-%% Correlation analyses
-
-% Real word decoding
 
 
 
