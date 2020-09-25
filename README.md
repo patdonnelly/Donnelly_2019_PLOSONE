@@ -7,6 +7,7 @@ Datasets are available in the data folder.
 
 figures.ipynb is a Jupyter notebook that will generate figures from the manuscript.
 lmeanalysis.m is a matlab analysis script that will perform the analyses from the manuscript.
+analysis.ipynb is a Jupyter notebook that will perform the following analyses from the manuscript: Correlation analysis, Effect Size Analysis, Demographic table analysis
 
 Requirements for analysis: Matlab software & Python 3
 
